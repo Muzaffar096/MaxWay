@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1,
+        "title": "MAX WAY BERUNIY",
+        "addres": "улица Беруни, 47, Ташкент",
+        "time":"Du-Yak: 10:00-22:00",
+        "close":"22:00 gacha ochiq",
+        "tel": 998712005400
+    },
+    {
+        "id": 2,
+        "title": "MAX WAY ATLAS",
+        "addres": "улица Катартал, 28, Ташкент",
+        "time":"Du-Yak: 10:00-22:00",
+        "close":"22:00 gacha ochiq",
+        "tel": 998712005400
+    },
+    {
+        "id": 3,
+        "title": "MAX WAY - DRUJBA",
+        "addres": "микрорайон Алмазар, 8/2, Чиланзарский район, Ташкент",
+        "time":"Du-Yak: 10:00-04:00",
+        "close":"04:00 gacha ochiq",
+        "tel": 998712005400
+    },
+    {
+        "id": 4,
+        "title": "MAX WAY MEGA PLANET",
+        "addres": "улица Ниязбек, 1",
+        "time":"Du-Yak: 10:00-23:00",
+        "close":"23:00 gacha ochiq",
+        "tel": 998712005400
+    },
+    {
+        "id": 5,
+        "title": "MAX WAY AVIASOZLAR",
+        "addres": "улица Авиасозлар, 23",
+        "time":"Du-Yak: 10:00-03:00",
+        "close":"03:00 gacha ochiq",
+        "tel": 998712005400
+    },
+    {
+        "id": 6,
+        "title": "MAX WAY RISOVIY",
+        "addres": "Узбекистан, Ташкент, Алтынкульская улица, 10",
+        "time":"Du-Yak: 10:00-03:00",
+        "close":"03:00 gacha ochiq",
+        "tel": 998712005400
+    },
+    {
+        "id": 7,
+        "title": "MAX WAY PARUS",
+        "addres": "улица Катартал, 60/5",
+        "time":"Du-Yak: 10:00-03:00",
+        "close":"03:00 gacha ochiq",
+        "tel": 998712005400
+    },
+    {
+        "id": 8,
+        "title": "MAX WAY MAGIC CITY",
+        "addres": "Узбекистан, Ташкент, улица Бабура, 174/6",
+        "time":"Du-Yak: 10:00-22:00",
+        "close":"22:00 gacha ochiq",
+        "tel": 998712005400
+    },
+    {
+        "id": 9,
+        "title": "MAX WAY SAMARQAND DARVOZA",
+        "addres": "Узбекистан, Ташкент, улица Коратош, 5А",
+        "time":"Du-Yak: 10:00-22:00",
+        "close":"22:00 gacha ochiq",
+        "tel": 998712005400
+    },
+    {
+        "id": 10,
+        "title": "MAX WAY PARKENT",
+        "addres": "Узбекистан, Ташкент, Яшнободский район, массив Мавлоно Риёзи, 30В",
+        "time":"Du-Yak: 10:00-03:00",
+        "close":"03:00 gacha ochiq",
+        "tel": 998712005400
+    },
+    {
+        "id": 11,
+        "title": "MAX WAY UNIVERSAM",
+        "addres": "Узбекистан, Ташкент, проспект Амира Темура, 41/3",
+        "time":"Du-Yak: 10:00-23:00",
+        "close":"23:00 gacha ochiq",
+        "tel": 998712005400
+    },
+    {
+        "id": 12,
+        "title": "MAX WAY ROYSON",
+        "addres": "Узбекистан, Ташкент, улица Заркайнар, 2",
+        "time":"Du-Yak: 10:00-01:00",
+        "close":"01:00 gacha ochiq",
+        "tel": 998712005400
+    },
+    {
+        "id": 13,
+        "title": "MAX WAY NEXT",
+        "addres": "Узбекистан, Ташкент, улица Бабура, 6",
+        "time":"Du-Yak: 10:00-22:00",
+        "close":"22:00 gacha ochiq",
+        "tel": 998712005400
+    },
+    {
+        "id": 14,
+        "title": "MAX WAY MUQUMIY",
+        "addres": "Узбекистан, Ташкент, улица Чиланзар",
+        "time":"Du-Yak: 10:00-04:00",
+        "close":"04:00 gacha ochiq",
+        "tel": 998712005400
+    },
+    {
+        "id": 15,
+        "title": "MAX WAY GRAND MIR",
+        "addres": "Узбекистан, Ташкент, улица Шота Руставели, 9А",
+        "time":"Du-Yak: 10:00-03:00",
+        "close":"03:00 gacha ochiq",
+        "tel": 998712005400
+    },
+    {
+        "id": 16,
+        "title": "MAX WAY SAYRAM",
+        "addres": "Узбекистан, Ташкент, улица Юнусота",
+        "time":"Du-Yak: 10:00-03:00",
+        "close":"03:00 gacha ochiq",
+        "tel": 998712005400
+    },
+    {
+        "id": 17,
+        "title": "MAX WAY MAKSIM GORKIY",
+        "addres": "махалля Элобод",
+        "time":"Du-Yak: 10:00-01:00",
+        "close":"01:00 gacha ochiq",
+        "tel": 998712005400
+    },
+    {
+        "id": 18,
+        "title": "MAX WAY SERGELI",
+        "addres": "Узбекистан, Ташкент, Сергелийский район, массив Сергели-VIIIА, 11",
+        "time":"Du-Yak: 10:00-03:00",
+        "close":"03:00 gacha ochiq",
+        "tel": 998712005400
+    },
+    {
+        "id": 19,
+        "title": "MAX WAY FONTAN",
+        "addres": "проспект Амира Темура",
+        "time":"Du-Yak: 10:00-03:00",
+        "close":"03:00 gacha ochiq",
+        "tel": 998712005400
+    },
+    {
+        "id": 20,
+        "title": "MAX WAY MINOR",
+        "addres": "MaxWay",
+        "time":"Du-Yak: 10:00-03:00",
+        "close":"03:00 gacha ochiq",
+        "tel": 998712005400
+    }
+]

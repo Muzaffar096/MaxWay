@@ -6,6 +6,25 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      "3xl": { max: "1439px" },
+      // => @media (max-width: 1439px) { ... }
+
+      "2xl": { max: "1279px" },
+      // => @media (max-width: 1279px) { ... }
+
+      xl: { max: "1023px" },
+      // => @media (max-width: 1023px) { ... }
+
+      lg: { max: "767px" },
+      // => @media (max-width: 767px) { ... }
+
+      md: { max: "639px" },
+      // => @media (max-width: 639px) { ... }
+
+      sm: { max: "400px" },
+      // => @media (max-width: 400px) { ... }
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

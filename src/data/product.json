@@ -1,0 +1,387 @@
+[
+    {
+        "id": 1,
+        "image": "/sendvich1+1.png",
+        "title": "Sendvich 2+1",
+        "text": "Narx 2ta maxsulot uchun ko'rsatilgan-uchinchi mahsulot ...",
+        "category":"Aksiya",
+        "price": 60000
+    },
+    {
+        "id": 2,
+        "image": "/fri.png",
+        "title": "Fri 2+1",
+        "text": "Narx 2ta maxsulot uchun ko'rsatilgan-uchinchi mahsulot ...",
+        "category":"Aksiya",
+        "price": 18000
+    },
+    {
+        "id": 3,
+        "image": "/max-anana.png",
+        "title": "Maxi BOX An'anaviy",
+        "text": "Original sendvich, kartoshka fri, 0,4 l coca cola, tanl...",
+        "category":"MaxiBox",
+        "price": 42000
+    },
+    {
+        "id": 4,
+        "image": "/max-retro.png",
+        "title": "Maxi BOX Retro",
+        "text": "Shaurma Original, kartoshka fri, 0,4 l coca cola , tanl...",
+        "category":"MaxiBox",
+        "price": 42000
+    },
+    {
+        "id": 5,
+        "image": "/max-german.png",
+        "title": "Max BOX German",
+        "text": "Herman Donar , kartoshka fri, 0,4 l coca cola, tanlash ...",
+        "category":"MaxiBox",
+        "price": 40000
+    },
+    {
+        "id": 6,
+        "image": "/max-trend.png",
+        "title": "Maxi BOX Trend",
+        "text": "Gamburger, kartoshka fri, 0,4 l coca cola, tanlash uch...",
+        "category":"MaxiBox",
+        "price": 40000
+    },
+    {
+        "id": 7,
+        "image": "/klab-sendvich.png",
+        "title": "Klab sendvich",
+        "text": "Original sendvich, kartoshka fri, tanlash uchun sous",
+        "category":"Sendvich",
+        "price": 36000
+    },
+    {
+        "id": 8,
+        "image": "/sendvich.png",
+        "title": "Sendvich Original",
+        "text": "Toster non, tovuq shnitseli, yangi bodring, pomidor, kl...",
+        "category":"Sendvich",
+        "price": 30000
+    },
+    {
+        "id": 9,
+        "image": "/lavash.png",
+        "title": "Lavash",
+        "text": "Lavash, donar mol go'shti, pomidor, chipslar, pomidor s...",
+        "category":"Lavash",
+        "price": 30000
+    },
+    {
+        "id": 10,
+        "image": "/lavash.png",
+        "title": "Lavash mini",
+        "text": "Pita, mol go'shti-donar, pomidor, chipslar, pomidor sou...",
+        "category":"Lavash",
+        "price": 26000
+    },
+    {
+        "id": 11,
+        "image": "/shaurma.png",
+        "title": "Shaurma",
+        "text": "Donor bulochka, mol go'shti-donar, yangi bodring, pomid...",
+        "category":"Shaurma",
+        "price": 28000
+    },
+    {
+        "id": 12,
+        "image": "/german-donar.png",
+        "title": "German donar",
+        "text": "Non, ranch sousi, qizil karam salati, Doner go'shti, ay...",
+        "category":"Shaurma",
+        "price": 30000
+    },
+    {
+        "id": 13,
+        "image": "/panini.png",
+        "title": "Panini",
+        "text": "Bulochka, mol go'shti-donar, pomidor, tuzlangan bodring...",
+        "category":"Panini",
+        "price": 30000
+    },
+    {
+        "id": 14,
+        "image": "/gamburger.png",
+        "title": "Gamburger",
+        "text": "Burger bulochkasi, tuzlangan bodring, pomidor, go'shtli...",
+        "category":"Burger",
+        "price": 25000
+    },
+    {
+        "id": 15,
+        "image": "/chizburger.png",
+        "title": "Chizburger",
+        "text": "Burger bulochkasi, tuzlangan bodring, pomidor, go'shtli...",
+        "category":"Burger",
+        "price": 28000
+    },
+    {
+        "id": 16,
+        "image": "/bigburger.png",
+        "title": "Bigburger",
+        "text": "Burger bulochkasi, tuzlangan bodring, pomidor, 2 ta go'...",
+        "category":"Burger",
+        "price": 40000
+    },
+    {
+        "id": 17,
+        "image": "/donar-kebab.png",
+        "title": "Donar kebab",
+        "text": "Mol go'shti donari-go'sht, makkajo'xori bilan guruch, k...",
+        "category":"Donar",
+        "price": 42000
+    },
+    {
+        "id": 18,
+        "image": "/donarbox.png",
+        "title": "Donar Box",
+        "text": "Mol go'shti donari-go'sht, kartoshka fri, guruch, ranch...",
+        "category":"Donar",
+        "price": 37000
+    },
+    {
+        "id": 19,
+        "image": "/non.png",
+        "title": "Non",
+        "text": "Yumshoq bulochka",
+        "category":"Donar",
+        "price": 3000
+    },
+    {
+        "id": 20,
+        "image": "/hotdog.png",
+        "title": "Hot Dog",
+        "text": "Hot-dog bulochkasi, Kanada sosiskasi, tuzlangan bodring...",
+        "category":"HotDog",
+        "price": 12000
+    },
+    {
+        "id": 21,
+        "image": "/kingdog.png",
+        "title": "King Dog",
+        "text": "Hot-dog bulochkasi, 2 ta kanada sosiskasi, tuzlangan bo...",
+        "category":"HotDog",
+        "price": 20000
+    },
+    {
+        "id": 22,
+        "image": "/hotdog.png",
+        "title": "Chiz Dog",
+        "text": "Hot-dog bulochkasi, kanada sosiskasi, tuzlangan bodri...",
+        "category":"HotDog",
+        "price": 15000
+    },
+    {
+        "id": 23,
+        "image": "/longer.png",
+        "title": "Longer",
+        "text": "Hot-dog bulochka,ketchup, mayonez, strips 1 dona, tuzl...",
+        "category":"HotDog",
+        "price": 15000
+    },
+    {
+        "id": 24,
+        "image": "/fri.png",
+        "title": "Fri kartoshkasi",
+        "text": "Kartoshka fri",
+        "category":"Gazaklar",
+        "price": 9000
+    },
+    {
+        "id": 25,
+        "image": "/kraft-pack.png",
+        "title": "Kraft packet",
+        "text": "Packet",
+        "category":"Gazaklar",
+        "price": 2000
+    },
+    {
+        "id": 26,
+        "image": "/box.png",
+        "title": "BOX",
+        "text": "Strips , kartoshka fri, naggetslar",
+        "category":"Gazaklar",
+        "price": 22000
+    },
+    {
+        "id": 27,
+        "image": "/strips.png",
+        "title": "Strips",
+        "text": "Striplar",
+        "category":"Gazaklar",
+        "price": 17000
+    },
+    {
+        "id": 28,
+        "image": "/naggets.png",
+        "title": "Naggets",
+        "text": "Naggets",
+        "category":"Gazaklar",
+        "price": 15000
+    },
+    {
+        "id": 29,
+        "image": "/poderevenski.png",
+        "title": "Po derevenski",
+        "text": "Kartoshka Po Derevenski",
+        "category":"Gazaklar",
+        "price": 15000
+    },
+    {
+        "id": 30,
+        "image": "/guruch.png",
+        "title": "Guruch",
+        "text": "Shirin makkajo'xori bilan guruch",
+        "category":"Tamaddilar",
+        "price": 7000
+    },
+    {
+        "id": 31,
+        "image": "/salat.png",
+        "title": "Salat",
+        "text": "Salat qizil karam aralashmasi",
+        "category":"Tamaddilar",
+        "price": 7000
+    },
+    {
+        "id": 32,
+        "image": "/tiramisu.png",
+        "title": "Tiramisu",
+        "text": "Savoyardi pechene, mascarpone",
+        "category":"Desertlar",
+        "price": 22000
+    },
+    {
+        "id": 33,
+        "image": "/qulupnay-donat.png",
+        "title": "Qulupnayli donat",
+        "text": "Qulupnayli donat",
+        "category":"Desertlar",
+        "price": 16000
+    },
+    {
+        "id": 34,
+        "image": "/karamel-donat.png",
+        "title": "Karamel donat",
+        "text": "Karamel donat",
+        "category":"Desertlar",
+        "price": 16000
+    },
+    {
+        "id": 35,
+        "image": "/yongok-donat.png",
+        "title": "Yo'ng'oqli donat",
+        "text": "Yo'ng'oqli donat",
+        "category":"Desertlar",
+        "price": 16000
+    },
+    {
+        "id": 36,
+        "image": "/cola-quyma.png",
+        "title": "Coca Cola (quyma)",
+        "text": "Coca Cola (quyma)",
+        "category":"Ichimliklar",
+        "price": 7000
+    },
+    {
+        "id": 37,
+        "image": "/cola.png",
+        "title": "Coca Cola",
+        "text": "Coca Cola",
+        "category":"Ichimliklar",
+        "price": 10000
+    },
+    {
+        "id": 38,
+        "image": "/fanta.png",
+        "title": "Fanta",
+        "text": "Fanta",
+        "category":"Ichimliklar",
+        "price": 10000
+    },
+    {
+        "id": 39,
+        "image": "/choy.png",
+        "title": "Qora choy",
+        "text": "Qora choy (ta’bga kora shakar)",
+        "category":"Ichimliklar",
+        "price": 5000
+    },
+    {
+        "id": 40,
+        "image": "/choy.png",
+        "title": "Ko'k choy",
+        "text": "Ko’k choy (ta’bga kora shakar)",
+        "category":"Ichimliklar",
+        "price": 5000
+    },
+    {
+        "id": 41,
+        "image": "/choy.png",
+        "title": "Limonli choy",
+        "text": "Limonli choy (ta’bga ko'ra shakar)",
+        "category":"Ichimliklar",
+        "price": 7000
+    },
+    {
+        "id": 42,
+        "image": "/choy.png",
+        "title": "Amerikano",
+        "text": "Tabiiy donli qahva (espresso, suv)",
+        "category":"Ichimliklar",
+        "price": 12000
+    },
+    {
+        "id": 43,
+        "image": "/choy.png",
+        "title": "Kapuchino",
+        "text": "Tabiiy donli qahva (espresso, sut, suv)",
+        "category":"Ichimliklar",
+        "price": 14000
+    },
+    {
+        "id": 44,
+        "image": "/choy.png",
+        "title": "Latte",
+        "text": "Tabiiy donli qahva (espresso, sut, suv)",
+        "category":"Ichimliklar",
+        "price": 14000
+    },
+    {
+        "id": 45,
+        "image": "/sous.png",
+        "title": "Ketchup",
+        "text": "Ketchup",
+        "category":"Souslar",
+        "price": 3000
+    },
+    {
+        "id": 46,
+        "image": "/sous.png",
+        "title": "Pishloqli sous",
+        "text": "Pishloqli sous",
+        "category":"Souslar",
+        "price": 3000
+    },
+    {
+        "id": 47,
+        "image": "/sous.png",
+        "title": "Sarimsoqli sous",
+        "text": "Sarimsoqli sous",
+        "category":"Souslar",
+        "price": 3000
+    },
+    {
+        "id": 48,
+        "image": "/sous.png",
+        "title": "Shirin va nordon sous",
+        "text": "Shirin va nordon sous",
+        "category":"Souslar",
+        "price": 3000
+    }
+    
+]
