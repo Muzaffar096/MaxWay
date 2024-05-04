@@ -11,7 +11,9 @@ const Footer = () => {
   return (
     <footer className="max-w-[1200px] mx-auto container my-10">
       <div className="flex items-center lg:flex-col gap-10 mb-10">
-        <Image src={logo} alt="Site Logo" width={50} height={50} />
+        <Link href={"/"}>
+          <Image src={logo} alt="Site Logo" width={50} height={50} />
+        </Link>
         <nav className=" flex justify-center w-full">
           <ul className="flex gap-10">
             <li>
@@ -34,11 +36,19 @@ const Footer = () => {
       </div>
       <hr />
       <div className="flex justify-between mt-6">
-        <p className=" text-slate-600">© Delever 2020 - 2024 Barcha huquqlar himoyalangan</p>
+        <p className=" text-slate-600">
+          © Delever 2020 - 2024 Barcha huquqlar himoyalangan
+        </p>
         <div className="flex gap-5">
-          <FaInstagram className=" text-[25px] opacity-60 cursor-pointer" />
-          <FaFacebook className=" text-[25px] opacity-60 cursor-pointer" />
-          <GrYoutube className=" text-[25px] opacity-60 cursor-pointer" />
+          <Link href={"https://www.instagram.com/"}>
+            <FaInstagram className=" text-[25px] opacity-60 hover:text-purple-950 cursor-pointer" />
+          </Link>
+          <Link href={"https://www.facebook.com/"}>
+            <FaFacebook className=" text-[25px] opacity-60 hover:text-purple-950 cursor-pointer" />
+          </Link>
+          <Link href={"https://www.youtube.com/"}>
+            <GrYoutube className=" text-[25px] opacity-60 hover:text-purple-950 cursor-pointer" />
+          </Link>
         </div>
       </div>
     </footer>

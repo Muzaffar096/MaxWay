@@ -1,6 +1,9 @@
+
 import Footer from "@/components/Footer/Footer";
 import "./globals.css";
 import Header from "@/components/Header/Header";
+import Providers from "@/redux/provider";
+
 
 export const metadata = {
   title: "MaxWay",
@@ -11,10 +14,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <Providers >
         <Header />
         <main className="max-w-[1200px] mx-auto container">{children}</main>
         <hr />
         <Footer />
+        </Providers>
       </body>
     </html>
   );
