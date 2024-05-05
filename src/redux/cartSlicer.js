@@ -8,16 +8,28 @@ const cartSlicer = createSlice({
   },
   reducers: {
     setItemInCart: (state, action) => {
-      state.itemsInCart.push(action.payload);
+      const newItem = action.payload;
+      const existingItem = state.itemsInCart.find((item) => item.id === newItem.id);
+      if (existingItem) {
+        existingItem.count++;
+      } else {
+        state.itemsInCart.push({ ...newItem, count: 1 });
+      }
     },
-
-    deleteItemInCart: (state, action) => {
-      state.itemsInCart = state.itemsInCart.filter(
-        (menu) => menu.id !== action.payload
-      );
+    decrementItemInCart: (state, action) => {
+      const itemToDecrement = action.payload;
+      const existingItem = state.itemsInCart.find((menu) => menu.id === itemToDecrement.id);
+      if (existingItem.count > 1) {
+        existingItem.count--;
+      }
     },
+    removeItem: (state, action) => {
+      const itemToRemove = action.payload;
+      state.itemsInCart = state.itemsInCart.filter((menu) => menu.id !== itemToRemove.id);
+    },
+    
   },
 });
 
-export const { setItemInCart, deleteItemInCart } = cartSlicer.actions;
+export const { setItemInCart, decrementItemInCart,removeItem } = cartSlicer.actions;
 export default cartSlicer.reducer;

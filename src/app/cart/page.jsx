@@ -10,7 +10,7 @@ const Cart = () => {
   const [inputValue, setInputValue] = useState("");
   const items = useSelector((state) => state.carts.itemsInCart);
   const totalPrice = items.reduce(
-    (acc, products) => (acc += products.price),
+    (acc, products) => (acc += products.price * products.count),
     0
   );
   const sendNumber = (e) => {
@@ -19,7 +19,7 @@ const Cart = () => {
   };
 
   return (
-    <section className=" my-10">
+    <section className=" my-10 relative">
       <h2 className="text-3xl my-10 font-bold">Savatcha</h2>
       <div className=" flex justify-between">
         <div className=" w-[68%]">
@@ -27,7 +27,7 @@ const Cart = () => {
             ? items.map((menu) => <ItemsCart menu={menu} key={menu.id} />)
             : "No products"}
         </div>
-        <div className="w-[28%] shadow-md border-t border-slate-100 p-3 rounded-xl">
+        <div className="w-[28%] shadow-md border-t h-[250px] border-slate-100 p-3 rounded-xl">
           <h3 className=" text-2xl font-semibold">Umumiy</h3>
           <div className="flex justify-between">
             <p className=" text-lg py-2">Mahsulotlar</p>

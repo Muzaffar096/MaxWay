@@ -6,7 +6,7 @@ const Menu = ({ menu }) => {
   return (
     <div className="mb-20">
       <div>
-        <h3 className=" text-3xl font-bold mb-5">Aksiya 2+1</h3>
+        <h3 className=" text-3xl font-bold mb-5">🎉Aksiya 2+1</h3>
         <div className="grid grid-cols-4 xl:grid-cols-3 md:grid-cols-2 gap-5">
           {products.map(
             (menu, i) => i < 2 && <Products menu={menu} key={menu.id} />
