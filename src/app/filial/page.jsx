@@ -1,4 +1,5 @@
 import Filials from "@/components/Filials/Filials";
+import Link from "next/link";
 import React from "react";
 
 const Filial = () => {
@@ -10,9 +11,9 @@ const Filial = () => {
           <button className=" p-2 px-10 rounded-full text-slate-800 bg-slate-200 font-medium">
             Ro'yxat
           </button>
-          <button className=" p-2 px-10 ml-5 rounded-full text-slate-800 bg-slate-200 font-medium">
+          <Link href={"/maps"} className=" p-2 px-10 ml-5 rounded-full text-slate-800 bg-slate-200 font-medium">
             Xarita
-          </button>
+            </Link>
         </div>
       </div>
       <Filials />
