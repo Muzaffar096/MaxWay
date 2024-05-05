@@ -147,7 +147,7 @@
         "id": 19,
         "image": "/non.png",
         "title": "Non",
-        "text": "Yumshoq bulochka",
+        "text": "Yumshoq bulochka ( Un, suv, shakar, o'simlik yog'i )",
         "category":"Donar",
         "price": 3000
     },
@@ -339,7 +339,7 @@
         "id": 43,
         "image": "/choy.png",
         "title": "Kapuchino",
-        "text": "Tabiiy donli qahva (espresso, sut, suv)",
+        "text": "Tabiiy donli qahva (espresso, sut)",
         "category":"Ichimliklar",
         "price": 14000
     },
@@ -347,7 +347,7 @@
         "id": 44,
         "image": "/choy.png",
         "title": "Latte",
-        "text": "Tabiiy donli qahva (espresso, sut, suv)",
+        "text": "Tabiiy donli qahva (espresso, sut)",
         "category":"Ichimliklar",
         "price": 14000
     },

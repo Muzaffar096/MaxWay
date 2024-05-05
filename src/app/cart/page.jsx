@@ -21,13 +21,13 @@ const Cart = () => {
   return (
     <section className=" my-10 relative">
       <h2 className="text-3xl my-10 font-bold">Savatcha</h2>
-      <div className=" flex justify-between">
-        <div className=" w-[68%]">
+      <div className=" flex flex-wrap justify-between">
+        <div className=" w-[68%] xl:w-[100%]">
           {items.length > 0
             ? items.map((menu) => <ItemsCart menu={menu} key={menu.id} />)
             : "No products"}
         </div>
-        <div className="w-[28%] shadow-md border-t h-[250px] border-slate-100 p-3 rounded-xl">
+        <div className="w-[28%] xl:w-[100%] shadow-md border-t h-[250px] border-slate-100 p-3 rounded-xl">
           <h3 className=" text-2xl font-semibold">Umumiy</h3>
           <div className="flex justify-between">
             <p className=" text-lg py-2">Mahsulotlar</p>

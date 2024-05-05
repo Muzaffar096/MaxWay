@@ -25,7 +25,7 @@ const Header = () => {
   };
   const items = useSelector((state) => state.carts.itemsInCart);
   const totalPrice = items.reduce(
-    (acc, products) => (acc += products.price),
+    (acc, products) => (acc += products.price * products.count),
     0
   );
 

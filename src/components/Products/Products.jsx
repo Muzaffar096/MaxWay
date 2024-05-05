@@ -60,7 +60,7 @@ const Products = ({ menu }) => {
           ) : (
             <div
               onClick={() => handleClick(menu)}
-              className="border-none md:w-full bg-[#51267D] rounded-full text-white p-2 h-[40px] px-4 cursor-pointer"
+              className="border-none md:w-full bg-[#51267D] active:bg-green-600 rounded-full text-white p-2 h-[40px] px-4 cursor-pointer"
             >
               Qo'shish
             </div>
