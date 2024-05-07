@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import {
   decrementItemInCart,
   removeItem,
@@ -7,8 +7,9 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import Image from "next/image";
 import { FaMinus, FaPlus } from "react-icons/fa";
+import { motion } from "framer-motion";
 
-const Products = ({ menu }) => {
+export const Products = forwardRef(({ menu },ref) => {
   const items = useSelector((state) => state.carts.itemsInCart);
   const dispatch = useDispatch();
   const handleClick = (menu) => {
@@ -24,7 +25,7 @@ const Products = ({ menu }) => {
   };
 
   return (
-    <div className=" max-w-[300px] rounded-xl shadow-lg" key={menu.id}>
+    <div ref={ref} className=" max-w-[300px] rounded-xl shadow-lg" key={menu.id}>
       <Image
         className=" rounded-t-xl h-[200px]"
         src={menu.image}
@@ -69,6 +70,6 @@ const Products = ({ menu }) => {
       </div>
     </div>
   );
-};
+});
 
-export default Products;
+export const MProducts = motion(Products);

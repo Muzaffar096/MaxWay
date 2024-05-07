@@ -1,9 +1,9 @@
 "use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { useSelector } from "react-redux";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { FaLocationDot } from "react-icons/fa6";
 import { BiSolidCart } from "react-icons/bi";
 import { FaUserLarge } from "react-icons/fa6";
@@ -14,17 +14,57 @@ import logo from "../../../public/logo.svg";
 import Login from "../Login/Login";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
 import MapsCard from "../Maps/Maps";
-
+import {
+  createUserWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+} from "firebase/auth";
+import { auth } from "../Firebase/Firebase";
 
 const Header = () => {
   const [modalActive, setModalActive] = useState(false);
   const [loginActive, setLoginActive] = useState(false);
   const [mapActive, setMapActive] = useState(false);
-  const [inputValue, setInputValue] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [donePassword, setDonePassword] = useState("");
+  const [error, setError] = useState("");
 
-  const sendNumber = (e) => {
+  const [authUser, setAuthUser] = useState("");
+
+  const hanleClick = (e) => {
     e.preventDefault();
-    setInputValue("");
+    if (password !== donePassword) {
+      setError("Parollar bir xil emas");
+      return;
+    }
+    createUserWithEmailAndPassword(auth, email, password)
+      .then((user) => {
+        console.log(user);
+        setError("");
+        setEmail("");
+        setPassword("");
+        setDonePassword("");
+      })
+      .catch((error) => console.log(error));
+  };
+
+  useEffect(() => {
+    const listen = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setAuthUser(user);
+      } else {
+        setAuthUser(null);
+      }
+    });
+    return () => {
+      listen();
+    };
+  }, []);
+  const userSignOut = () => {
+    signOut(auth)
+      .then(() => console.log("success"))
+      .catch((e) => console.log(e));
   };
 
   const items = useSelector((state) => state.carts.itemsInCart);
@@ -32,6 +72,17 @@ const Header = () => {
     (acc, products) => (acc += products.price * products.count),
     0
   );
+
+  const listVariants = {
+    hidden: { opacity: 0, x: -100 },
+    visible: (custom) => ({
+      opacity: 1,
+      x: 0,
+      transition: {
+        delay: custom * 0.5,
+      },
+    }),
+  };
 
   return (
     <header className="flex items-center justify-between max-w-[1200px] mx-auto container py-6">
@@ -96,7 +147,12 @@ const Header = () => {
             <ImCancelCircle className=" text-[30px]" />
           </button>
         </div>
-        <button
+        <motion.button
+          variants={listVariants}
+          initial="hidden"
+          whileInView="visible"
+          animate="visible"
+          custom={1}
           onClick={() => {
             setLoginActive(true);
             setModalActive(false);
@@ -104,10 +160,21 @@ const Header = () => {
           className=" text-xl text-purple-950 font-semibold my-5"
         >
           Kirish
-        </button>
+        </motion.button>
         <hr />
-        <ul>
-          <li className="my-5">
+        <motion.ul
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ amount: 0.03 }}
+        >
+          <motion.li
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            animate="visible"
+            custom={2}
+            className="my-5"
+          >
             <Link
               onClick={() => setModalActive(false)}
               className=" text-lg"
@@ -115,8 +182,15 @@ const Header = () => {
             >
               Bosh sahifa
             </Link>
-          </li>
-          <li className="mb-5">
+          </motion.li>
+          <motion.li
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            animate="visible"
+            custom={3}
+            className="mb-5"
+          >
             <Link
               onClick={() => setModalActive(false)}
               className=" text-lg"
@@ -124,8 +198,15 @@ const Header = () => {
             >
               Filiallar
             </Link>
-          </li>
-          <li className="mb-5">
+          </motion.li>
+          <motion.li
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            animate="visible"
+            custom={4}
+            className="mb-5"
+          >
             <Link
               onClick={() => setModalActive(false)}
               className=" text-lg"
@@ -133,8 +214,14 @@ const Header = () => {
             >
               Biz haqimizda
             </Link>
-          </li>
-          <li>
+          </motion.li>
+          <motion.li
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            animate="visible"
+            custom={5}
+          >
             <Link
               onClick={() => setModalActive(false)}
               className=" text-lg"
@@ -142,8 +229,8 @@ const Header = () => {
             >
               Bog'lanish
             </Link>
-          </li>
-        </ul>
+          </motion.li>
+        </motion.ul>
       </BurgerMenu>
       <MapsCard className="" active={mapActive} setActive={setMapActive}>
         <button className="float-right" onClick={() => setMapActive(false)}>
@@ -171,14 +258,17 @@ const Header = () => {
                 type="text"
                 placeholder="Yetkazib berish manzili"
               />
-              <button onClick={() => setMapActive(false)} className=" w-full p-2 rounded-full bg-slate-300">
+              <button
+                onClick={() => setMapActive(false)}
+                className=" w-full p-2 rounded-full bg-slate-300"
+              >
                 Belgilash
               </button>
             </div>
           </div>
           <div className="w-1/2">
             <iframe
-            className=" float-end"
+              className=" float-end"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47963.34306422945!2d69.13672685623169!3d41.29343862000693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8bc7af9ea289%3A0x7364f8761707a212!2sMax%20Way!5e0!3m2!1sen!2s!4v1714951554867!5m2!1sen!2s"
               width="400"
               height="480"
@@ -190,36 +280,88 @@ const Header = () => {
         </div>
       </MapsCard>
       <Login className="" active={loginActive} setActive={setLoginActive}>
-        <div className="p-5">
-          <button className="float-right" onClick={() => setLoginActive(false)}>
+        <div className="p-5 relative">
+          <button
+            className="float-right absolute -right-2 -top-2"
+            onClick={() => setLoginActive(false)}
+          >
             <ImCancelCircle className=" text-[30px] " />
           </button>
-          <h3 className=" text-3xl font-semibold mt-8 text-center">
-            Tizimga kirish
-          </h3>
-          <p className=" text-xl text-center mt-2 text-slate-500">
-            Telefon raqamingiz bilan tizimga kiring
-          </p>
-          <form onSubmit={sendNumber}>
-            <label className="block my-6" htmlFor="tel">
-              Telefon raqam
-              <input
-                className=" border block w-full p-2 rounded-lg border-purple-800"
-                name="tel"
-                type="number"
-                placeholder="+998"
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
-              />
-            </label>
-            <button
-              onClick={() => setLoginActive(false)}
-              type="submit"
-              className="p-3 w-full  bg-slate-200 rounded-full "
-            >
-              Kodni yuborish
-            </button>
-          </form>
+          {authUser ? (
+            <div>
+              <div>
+                <button
+                  onClick={userSignOut}
+                  className=" text-white p-2 px-4 rounded-full absolute -top-1 -left-1 bg-red-700 active:bg-orange-500"
+                >
+                  Chiqish
+                </button>
+              </div>
+              <h3 className=" text-xl text-center mt-10">
+                To'lovni amalga oshirish uchun <span>Xarid qilish</span>{" "}
+                tugmasini bosing
+              </h3>
+              <div className=" h-[280px] grid content-end">
+                <button
+                  onClick={() => setLoginActive(false)}
+                  className="p-3 w-full  active:bg-green-600  bg-slate-200 rounded-full"
+                >
+                  Xarid qilish
+                </button>
+              </div>
+            </div>
+          ) : (
+            <div>
+              <h3 className=" text-3xl font-semibold  text-center">
+                Tizimga kirish
+              </h3>
+              <p className=" text-xl text-center mt-2 text-slate-500">
+                Email orqali tizimga kiring
+              </p>
+              <form onSubmit={hanleClick}>
+                <label className="block mt-3" htmlFor="email">
+                  Email addres
+                  <input
+                    className=" border block w-full p-2 rounded-lg border-purple-800"
+                    name="email"
+                    type="email"
+                    placeholder="Email kiriting"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </label>
+                <label className="block" htmlFor="password">
+                  Password
+                  <input
+                    className=" border block w-full p-2 rounded-lg border-purple-800"
+                    name="password"
+                    type="password"
+                    placeholder="Parol kiriting"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                  />
+                </label>
+                <label className="block " htmlFor="password2">
+                  Password
+                  <input
+                    className=" border block w-full p-2 rounded-lg border-purple-800"
+                    name="password2"
+                    type="password"
+                    placeholder="Parolni tasdiqlang"
+                    value={donePassword}
+                    onChange={(e) => setDonePassword(e.target.value)}
+                  />
+                </label>
+                <button
+                  type="submit"
+                  className="p-3 w-full mt-9 active:bg-green-600  bg-slate-200 rounded-full "
+                >
+                  Kodni yuborish
+                </button>
+                {error ? <p className=" text-red-700">{error}</p> : ""}
+              </form>
+            </div>
+          )}
         </div>
       </Login>
     </header>
