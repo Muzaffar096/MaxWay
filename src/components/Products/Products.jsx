@@ -25,7 +25,7 @@ export const Products = forwardRef(({ menu },ref) => {
   };
 
   return (
-    <div ref={ref} className=" max-w-[300px] rounded-xl shadow-lg" key={menu.id}>
+    <div ref={ref} className=" max-w-[300px] grid content-between rounded-xl shadow-lg" key={menu.id}>
       <Image
         className=" rounded-t-xl h-[200px]"
         src={menu.image}
@@ -33,7 +33,7 @@ export const Products = forwardRef(({ menu },ref) => {
         width={300}
         height={200}
       />
-      <div className=" px-3 ">
+      <div className=" px-3 grid content-between ">
         <h4 className=" text-xl font-semibold py-3">{menu.title}</h4>
         <p className=" text-slate-600">{menu.text}</p>
         <div className="flex justify-between md:flex-col py-4 items-center">

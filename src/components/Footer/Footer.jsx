@@ -15,7 +15,7 @@ const Footer = () => {
           <Image src={logo} alt="Site Logo" width={50} height={50} />
         </Link>
         <nav className=" flex justify-center w-full">
-          <ul className="flex gap-10">
+          <ul className="flex sm:gap-3 gap-10">
             <li>
               <Link className=" text-lg" href={"/filial"}>
                 Filiallar
